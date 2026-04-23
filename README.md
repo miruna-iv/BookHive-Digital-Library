@@ -22,7 +22,7 @@ Avid readers often struggle with fragmented experiences: they use one app for ca
 * **Activity Feed:** A real-time stream of what friends and the community are currently reading or reviewing.
 * **Collaborative Lists:** Users can contribute to "Community Hives"—shared reading lists focused on specific niches or challenges.
 
-## 🛠️ Technical Implementation
+## Technical Implementation
 
 ### **Key Technical Challenges & Solutions**
 * **API Integration:** Successfully integrated third-party Book APIs, implementing caching mechanisms to reduce latency and API call overhead.
