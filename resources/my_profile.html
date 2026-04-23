@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Profile 🐝</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="BookHive: digital library - User Profile"
+    />
+    <meta name="autor" content="Ivan Miruna Maria" />
+    <link rel="stylesheet" href="profile_style.css" type="text/css" />
+    <link rel="icon" href="resurse/logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="resurse/logo_removedbg.png"
+        width="100"
+        height="100"
+        alt="BookHive logo"
+      />
+      <h1 class="site-name">BookHive</h1>
+      <nav>
+        <div class="search-container">
+          <input type="text" id="searchBar" placeholder="Search books..." />
+          <div id="suggestions"></div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="resurse/menu.png" width="18" alt="Menu icon" /> Menu
+          </button>
+
+          <div class="dropdown-content">
+            <a href="homepage.html">
+              <img src="resurse/home_icon.png" width="18" alt="Home Icon" />
+              Home
+            </a>
+            <a href="my_books.html">
+              <img src="resurse/book_icon.png" width="18" alt="Books icon" />
+              My books
+            </a>
+            <a href="friends.html">
+              <img src="resurse/friends.png" width="18" alt="Friends icon" />
+              Friends
+            </a>
+            <a href="news.html">
+              <img src="resurse/news.png" width="18" alt="News icon" />
+              News
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="profile-container" id="profileCard">
+        <h2>My Profile 🐝</h2>
+
+        <section id="user-info" class="profile-section">
+          <p><strong>Name:</strong> <span id="display-name">Guest</span></p>
+          <p>
+            <strong>Username:</strong> <span id="display-username">@guest</span>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <span id="display-email">Not logged in</span>
+          </p>
+        </section>
+
+        <hr />
+
+        <section class="preferences-section">
+          <h3>Reading Preferences</h3>
+          <form id="preferences-form">
+            <div class="input-group">
+              <label>Favorite Category:</label>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="fiction"
+                  name="fav_genre"
+                  value="Fiction"
+                  checked
+                />
+                <label for="fiction">Fiction</label>
+                <input
+                  type="radio"
+                  id="non-fiction"
+                  name="fav_genre"
+                  value="Non-Fiction"
+                />
+                <label for="non-fiction">Non-Fiction</label>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="reading-goal"
+                >Daily Reading Goal (pages):
+                <span id="goal-val">50</span></label
+              >
+              <input
+                type="range"
+                id="reading-goal"
+                min="10"
+                max="200"
+                value="50"
+              />
+            </div>
+
+            <div class="input-group">
+              <input type="checkbox" id="newsletter" />
+              <label for="newsletter">Receive BookHive Newsletter</label>
+            </div>
+
+            <div class="profile-buttons">
+              <button type="button" id="randomize-style" class="btn-secondary">
+                Magic Style ✨
+              </button>
+              <button type="button" id="logout-btn" class="btn-danger">
+                Logout
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script src="profile_script.js"></script>
+    <script src="global_search.js"></script>
+  </body>
+</html>

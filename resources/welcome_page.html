@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to BookHive! 🐝📖</title>
+    <meta name="description" content="BookHive: digital library" />
+    <meta name="autor" content="Ivan Miruna Maria" />
+    <link rel="stylesheet" href="welcome_page_style.css" />
+    <link rel="icon" href="resurse/logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="resurse/logo_removedbg.png"
+          alt="BookHive Logo"
+          class="nav__logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#features" class="nav__link">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#quiz" class="nav__link">Book Quiz</a>
+          </li>
+          <li class="nav__item">
+            <a href="login.html" class="nav__link nav__link--btn"
+              >Login / Sign Up</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <div class="header__text">
+          <h1>Welcome to <span class="highlight">BookHive</span>!</h1>
+          <h4 id="dynamic-quote">
+            Take the first step towards your very own digital library.
+          </h4>
+          <p>
+            Sign up now and create your own shelves - save your favorite titles,
+            track what you're reading, and discover new recommendations.
+          </p>
+          <a href="login.html" class="btn btn--show-modal">Get Started</a>
+        </div>
+        <img
+          src="resurse/flat-stack-books.png"
+          alt="Stack of books"
+          class="header__img"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="features">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">What BookHive offers</h3>
+      </div>
+      <div class="features">
+        <div class="features__feature">
+          <img src="resurse/library.png" alt="" class="features__icon" />
+          <h5>Organize your shelves</h5>
+          <p>Create custom shelves and organize your books.</p>
+        </div>
+        <div class="features__feature">
+          <img src="resurse/reading.png" alt="" class="features__icon" />
+          <h5>Track reading progress</h5>
+          <p>Keep track of what you’re reading and finished books.</p>
+        </div>
+        <div class="features__feature">
+          <img src="resurse/recommendation.png" alt="" class="features__icon" />
+          <h5>Discover recommendations</h5>
+          <p>Get book suggestions based on your tastes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--quiz" id="quiz">
+      <div class="section__title">
+        <h2 class="section__description">Discovery</h2>
+        <h3 class="section__header">Find your next adventure 🐝</h3>
+      </div>
+      <div class="quiz-container">
+        <div class="quiz-box">
+          <h5>What should you read next?</h5>
+          <p>Select your mood and we'll pick a genre for you!</p>
+          <div class="input-group">
+            <label for="mood-select">I am feeling...</label>
+            <select id="mood-select" class="quiz-select">
+              <option value="adventurous">Adventurous</option>
+              <option value="romantic">Romantic</option>
+              <option value="mysterious">Mysterious</option>
+              <option value="thoughtful">Thoughtful</option>
+            </select>
+          </div>
+          <button id="btn-quiz" class="btn">Generate Suggestion</button>
+          <div id="quiz-result" class="quiz-result-box"></div>
+        </div>
+        <div class="stats-box">
+          <h5>Community Live Stats</h5>
+          <div class="stat-item">
+            <span class="stat-number" id="stat-books">12,450</span>
+            <span class="stat-label">Books Hive-d</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="stat-users">3,120</span>
+            <span class="stat-label">Active Bees</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>Email: miruna-maria.ivan@s.unibuc.ro</li>
+            <li>Phone: +40 727 167 978</li>
+            <li>
+              Facultatea de Matematica si Informatica, Universitatea din
+              Bucuresti
+            </li>
+          </ul>
+        </div>
+        <div class="footer__logo-container">
+          <img
+            src="resurse/logo.png"
+            alt="BookHive Logo"
+            class="footer__logo"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="welcome_script.js"></script>
+  </body>
+</html>

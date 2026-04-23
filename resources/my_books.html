@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My boks 📖</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="BookHive: digital library" />
+    <meta name="autor" content="Ivan Miruna Maria" />
+    <link rel="stylesheet" href="my_books_style.css" type="text/css" />
+    <link rel="icon" href="resurse/logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="resurse/logo_removedbg.png"
+        width="100"
+        height="100"
+        alt="BookHive logo"
+      />
+      <h1 class="site-name">BookHive</h1>
+      <nav>
+        <div class="search-container">
+          <input type="text" id="searchBar" placeholder="Search books..." />
+          <div id="suggestions"></div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="resurse/menu.png" width="18" alt="Menu icon" /> Menu
+          </button>
+
+          <div class="dropdown-content">
+            <a href="my_profile.html"
+              ><img src="resurse/user.png" width="18" alt="User icon" /> My
+              profile</a
+            >
+            <a href="homepage.html"
+              ><img src="resurse/home_icon.png" width="18" alt="Home icon" />
+              Home
+            </a>
+            <a href="news.html"
+              ><img src="resurse/news.png" width="18" alt="News icon" /> News</a
+            >
+            <a href="friends.html"
+              ><img src="resurse/friends.png" width="18" alt="Friends icon" />
+              Friends</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="my-books-container">
+        <section class="current-book">
+          <h2>Currently Reading 📖</h2>
+
+          <div class="book-card">
+            <img src="resurse/book_placeholder.png" alt="Current Book Cover" />
+            <div class="book-info">
+              <h3 id="current-book-title">Book Title</h3>
+              <p id="current-book-author">Author Name</p>
+              <label for="progress">Progress:</label>
+              <input type="number" id="progress" min="0" max="100" value="0" />%
+              <button id="update-progress">Update Progress</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="user-shelves">
+          <h2>Your Shelves</h2>
+          <div class="shelf" id="want-to-read">
+            <h3>Want to Read</h3>
+            <div class="books-on-shelf"></div>
+          </div>
+
+          <div class="shelf" id="read">
+            <h3>Read</h3>
+            <div class="books-on-shelf"></div>
+          </div>
+          <button id="add-shelf">+ Add Shelf</button>
+        </section>
+      </div>
+    </main>
+    <script src="my_books_script.js"></script>
+    <script src="global_search.js"></script>
+  </body>
+</html>

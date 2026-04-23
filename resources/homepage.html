@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="BookHive: digital library" />
+    <meta name="autor" content="Ivan Miruna Maria" />
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="homepage_style.css" type="text/css" />
+    <link rel="icon" href="resurse/logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="resurse/logo_removedbg.png"
+        width="100"
+        height="100"
+        alt="Home icon"
+      />
+      <h1 class="site-name">BookHive</h1>
+      <nav>
+        <div class="search-container">
+          <input type="text" id="searchBar" placeholder="Search books..." />
+          <div id="suggestions"></div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="resurse/menu.png" width="18" alt="Menu icon" /> Menu
+          </button>
+
+          <div class="dropdown-content">
+            <a href="my_profile.html"
+              ><img src="resurse/user.png" width="18" alt="User icon" /> My
+              profile</a
+            >
+            <a href="my_books.html">
+              <img src="resurse/book_icon.png" width="18" alt="Books icon" />
+              My Books
+            </a>
+            <a href="news.html">
+              <img src="resurse/news.png" width="18" alt="News icon" /> News
+            </a>
+            <a href="friends.html">
+              <img src="resurse/friends.png" width="18" alt="Friends icon" />
+              Friends
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="side-by-side-container">
+        <section class="weekly-section">
+          <div class="weekly-book">
+            <h2>Book of the week ✨</h2>
+            <img
+              id="weekly-book-img"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="book of the week"
+            />
+            <h3 id="weekly-book-title"></h3>
+            <p id="weekly-book-desc"></p>
+          </div>
+        </section>
+
+        <section id="recommendations">
+          <h2>Recommendations ✨</h2>
+        </section>
+      </div>
+    </main>
+    <script src="homepage.js"></script>
+    <script src="global_search.js"></script>
+  </body>
+</html>
